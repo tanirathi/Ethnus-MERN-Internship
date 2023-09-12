@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    label{
+        width: 120px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .button:hover{
+        box-shadow: 0 0 5px #faa209;
+    }
+</style>
+<body>
+    <form>
+        <label for="fname">FullName: </label>
+        <input type="text" placeholder="FullName" id="nm">
+        <br>
+        <label for="name">UserName: </label>
+        <input type="text" placeholder="UserName" id="usernm">
+        <br>
+        <label for="fname">Password: </label>
+        <input type="password" placeholder="Password" id="pswd">
+        <br>
+        <label for="fname">Re-Password: </label>
+        <input type="password" placeholder="Re-password" id="rpswd">
+        <br>
+        <label for="faddress">Address: </label>
+        <input type="text" placeholder="Address" id="add">
+        <br>
+        <label for="fage">Age: </label>
+        <input type="number" placeholder="age" id="ag">
+        <br>
+        <label for="fgender">Gender: </label>
+        <select name="gender" id="gen">
+            <option value="Male">Male</option>
+            <option value="Male">Female</option> 
+            <option value="Male">Other</option>
+        </select>
+        <br>
+        <button class="button">Save</button>
+    </form>             
+</body>
+</html>
