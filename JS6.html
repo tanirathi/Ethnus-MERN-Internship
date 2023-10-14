@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login_form_container{
+    position: relative;
+    width: 400px;
+    height: 470px;
+    max-width: 400px;
+    max-height: 470px;
+    background: #dedfe7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 70px;
+    box-shadow: 0px 3px 3px black;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.input_group{
+    margin-top: 40px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid black;
+}
+.input_text{
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+
+}
+#login_button{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    transition: 1s;
+    margin-top: 70px;
+
+
+}
+#login_button a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border: 1px solid #00ccff;
+    border-radius: 50px;
+    background-color: #4e67d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotter {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.fotter a{
+    color: blue;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#rememberMe{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.signup{
+    margin-top: 10px;
+    font-size: 18px;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task - 6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+    <h1>JS Task - 6</h1>
+    <div class="login_form_container">
+        <div class="login_form">
+            <h2>Instagram</h2>
+            <div class="input_group">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Username" class="input_text"  />
+            </div>
+            <div class="input_group">
+                <i class="fa fa-unlock-alt"></i>
+                <input type="password" placeholder="Password" class="input_text" />
+            </div>
+            <div class="button_group" id="login_button">
+                <a>Submit</a>
+            </div>
+            <div class="fotter">
+                <input type="checkbox" name="rememberMe" ><span id="rememberMe">
+                    Remember Me</span>
+                    
+                <a>Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+    <p class="signup">Don't have an account! <a href="">Sing Up here</a></p>
+</body>
+
+</html>

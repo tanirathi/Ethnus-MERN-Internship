@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TASK - 4 </title>
+</head>
+<body>
+    <span>Today's Date is : </span>
+    <strong id="date"></strong> <strong id="month"></strong> <strong id="year"></strong><br>
+    
+    <button onclick="showDate()" style="margin-bottom: 20px;">Show Date</button><br>
+    
+    <span>Current Time is : </span>
+    <strong id="timing"></strong><br>
+    <button onclick="showTime()" class="time">Show Time</button>
+</body>
+
+
+<script>
+    
+    let datenow = new Date();
+
+    let year = datenow.getFullYear();
+    let dt = datenow.getDate();
+    let mnth = datenow.getMonth();
+    function showDate(){
+         
+        document.getElementById("date").innerHTML = dt + "/";
+        document.getElementById("month").innerHTML = mnth  + "/";
+        document.getElementById("year").innerHTML = year;
+    }
+
+    function showTime() {
+        document.getElementById("timing").innerHTML = Date();
+    }
+</script>
+</html>
